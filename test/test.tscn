@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cljhyg06wsytq"]
+
+[ext_resource type="Material" uid="uid://ceplrvs65axw0" path="res://test/test.material" id="1_syuel"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_8a8pi"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.37968)
+material_override = ExtResource("1_syuel")
+mesh = SubResource("QuadMesh_8a8pi")
